@@ -11,6 +11,7 @@ export interface ButtonProps {
 }
 
 export interface PropertyProps {
+  id?: string | number;
   name: string;
   address: {
     state: string;
@@ -27,4 +28,14 @@ export interface PropertyProps {
   };
   image: string;
   discount: string;
+}
+
+export interface ReviewProps {
+  id: number;
+  propertyId: number;
+  guestName: string;
+  rating: number;
+  comment: string;
+  date: string;
+  verified: boolean;
 }
